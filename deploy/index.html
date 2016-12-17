@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
+    <title></title>
+</head>
+
+<body>
+
+    <header>
+        <div class="card-panel black">
+            <p id="title">
+                trackPath
+            </p>
+        </div>
+
+
+
+
+    </header>
+    <div class=container>
+        <main>
+            <div class="row" id="row">
+                <input type="text" name="" autofocus="autofocus" placeholder="first name" id="nameinput">
+            </div>
+            <div class="row" id="row">
+                <input type="text" name="" placeholder="10 digit phone number" id="phoneinput">
+            </div>
+            <div class="row" id="row">
+                <div id="map" class="offset left"></div>
+                <div class="" id="name" val=""></div>
+                <div class="" id="username" val="">Name: </div>
+                <div class="" id="userphone" val="">Phone Number: </div>
+            </div>
+
+            <a id="trackbutton" class="waves-effect waves-light btn offset center">track my path</a>
+            <a id="showbutton" class="waves-effect waves-light btn offset center">show where i've been</a>
+            <a id="logname" class="waves-effect waves-light btn offset center">log name</a>
+            <a id="reset" class="waves-effect waves-light btn offset center">reset</a>
+
+        </main>
+        <footer>
+
+            <div class="card-panel black">
+                <small id="footer">
+              Copyright Luke McCrae 2016
+          </small>
+            </div>
+        </footer>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB6mjYhp5ca_RPpOdHu_Ul7E-YY6BYzmms&callback=initMap&libraries=places" async defer></script>
+
+    <script src="bundle.js"></script>
+</body>
+
+</html>
